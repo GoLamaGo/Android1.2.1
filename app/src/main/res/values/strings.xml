@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Подписка</string>
+    <string name="userNameText">Имя пользователя</string>
+    <string name="userEmailText">Электронная почта</string>
+    <string name="subscriptionResult">Подписка на рассылку успешно оформлена для пользователя %s на электронный адрес %s</string>
+</resources>

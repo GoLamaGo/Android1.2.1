@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".Subscription">
+
+    <Button
+        android:id="@+id/buttonOk"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:width="240dp"
+        android:height="50dp"
+        android:backgroundTint="#00BCD4"
+        android:fadingEdge="horizontal|vertical"
+        android:fontFamily="sans-serif-medium"
+        android:text="OK"
+        android:textColor="#131313"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/buttonClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="120dp"
+        android:width="240dp"
+        android:height="50dp"
+        android:backgroundTint="#00BCD4"
+        android:fadingEdge="horizontal|vertical"
+        android:fontFamily="sans-serif-medium"
+        android:text="Очистить"
+        android:textColor="#131313"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/userNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:width="240dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="textPersonName"
+        android:textColor="#131313"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userEmailText"
+        android:layout_width="131dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/userEmailText"
+        android:textColor="#131313"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/userEmailEdit"
+        app:layout_constraintStart_toStartOf="@+id/userEmailEdit" />
+
+    <TextView
+        android:id="@+id/userNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/userNameText"
+        android:textColor="#131313"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/userNameEdit"
+        app:layout_constraintStart_toStartOf="@+id/userNameEdit" />
+
+    <EditText
+        android:id="@+id/userEmailEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:width="240dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="textEmailAddress"
+        android:textColor="#131313"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEdit" />
+
+    <TextView
+        android:id="@+id/subscriptionResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#131313"
+        android:textSize="14sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
